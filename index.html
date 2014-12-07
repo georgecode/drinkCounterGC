@@ -1,36 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-	<head>
-	  <meta charset="utf-8">
-	  <title></title>
-	  <link rel="stylesheet" href="stylesheet.css">
-	  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-	  <script type='text/javascript' src='script.js'></script>
-	</head>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
-	<body>
-
-		
-
-		<div class="cigs">
-			<p>cigs</p>
-			<div class="cigsNumber"></div>
-		</div>
-		
-		<div class="drinks">
-			<p>drinks</p>
-			<div class="drinksNumber"></div>
-		</div>
-		
-		<div class="water">
-			<p>water</p>
-			<div class="waterNumber"></div>
-		</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
 
-	</body>
-</html>
+<!-- JQuary  -->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
 
+<!-- javascript local -->
+<script type='text/javascript' src='script.js'></script>
 
+<!-- for mobile and responsiveness -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script type="text/javascript">/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+</script
+</head>
+
+<body>
+	
+<p><h2>Keep track of the night out</h2></p>
+<p><h4>We give an estimate on the likelyhood of having a hangover based on your consumption.</h4><p>
+<p><h7>Tomorrow, you rate how accurate the predictions was and we adjsut our model to your real life data.<h7><p>
+	<div class="container-fluid">
+		<div class="row">
+	  		<div class="col-md-4">
+								<!-- Standard button -->
+
+				<button type="button" class="btn btn-default" id="drinks"> + 1 drink</button>
+				<div id="drinksUsed"></div>
+			</div>
+
+	  		<div class="col-md-4">
+								<!-- Standard button -->
+				<button type="button" class="btn btn-default" id="waters"> + 1 water</button>
+				<div id="watersUsed"></div>
+		  	</div>
+
+	  		<div class="col-md-4">
+	  		
+								<!-- Standard button -->
+				<button type="button" class="btn btn-default" id="cigs"> + 1 cig</button>
+				<div id="cigsUsed"></div>
+			</div>
+	  	</div>
+	</div>
+<p>The more you use the app the better our predictions will be and the more informed you will be</p>
+<p><h9>Enjoy Responisbly!</h9></p>
+</body>

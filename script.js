@@ -3,19 +3,19 @@ $(document).ready(function(){
 	var numDrinks = 0
 	var numWaters = 0	
 
-	$('.cigs').click(function(){
+	$('#cigs').click(function(){
 		numCigs = numCigs+1
-		$('.cigs').html("<p> You smoked </p>" + numCigs + "<p>cids</p>")
+		$('#cigsUsed').html("<p> You smoked </p>" + numCigs + "<p>cids</p>")
 	});
 
-	$('.drinks').click(function(){
+	$('#drinks').click(function(){
 		numDrinks = numDrinks+1
-		$('.drinks').html("<p> You drank </p>" + numDrinks + "<p>drinks</p>")
+		$('#drinksUsed').html("<p> You drank </p>" + numDrinks + "<p>drinks</p>")
 	});
 
-	$('.water').click(function(){
+	$('#waters').click(function(){
 		numWaters = numWaters+1
-		$('.water').html("<p> You drank </p>" + numWaters + "<p>waters</p>")
+		$('#watersUsed').html("<p> You drank </p>" + numWaters + "<p>waters</p>")
 	});
 	
 });
