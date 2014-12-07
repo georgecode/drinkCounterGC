@@ -16,6 +16,9 @@
 <!-- javascript local -->
 <script type='text/javascript' src='script.js'></script>
 
+<!-- our css -->
+<link rel="stylesheet" href="style.css">
+
 <!-- for mobile and responsiveness -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,37 +34,41 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
 
-</script
+</script>
 </head>
 
 <body>
 	
-<p><h2>Keep track of the night out</h2></p>
-<p><h4>We give an estimate on the likelyhood of having a hangover based on your consumption.</h4><p>
-<p><h7>Tomorrow, you rate how accurate the predictions was and we adjsut our model to your real life data.<h7><p>
+<div class="intro"><p><h2 class="lead">Keep track of the night out</h2></p></div>
+<p><h4 class="lead">We give an estimate on the likelyhood of having a hangover based on your consumption.</h4><p>
+<p><h7 class="lead">Tomorrow, you rate how accurate the predictions was and we adjsut our model to your real life data.<h7><p>
 	<div class="container-fluid">
 		<div class="row">
-	  		<div class="col-md-4">
+	  		<div class="col-xs-6">
 								<!-- Standard button -->
-
 				<button type="button" class="btn btn-default" id="drinks"> + 1 drink</button>
-				<div id="drinksUsed"></div>
 			</div>
 
-	  		<div class="col-md-4">
+				<div class="col-xs-6" id="drinksUsed">0 drinks</div>
+			</div>
+			<br>
+		<div class="row">
+	  		<div class="col-xs-6">
 								<!-- Standard button -->
 				<button type="button" class="btn btn-default" id="waters"> + 1 water</button>
-				<div id="watersUsed"></div>
-		  	</div>
-
-	  		<div class="col-md-4">
-	  		
+			</div>
+				<div class="col-xs-6" id="watersUsed">You haven't add any water tonight, drink up</div>
+				</div>
+				<br>
+		  	<div class="row">
+	  		<div class="col-xs-6">
 								<!-- Standard button -->
 				<button type="button" class="btn btn-default" id="cigs"> + 1 cig</button>
-				<div id="cigsUsed"></div>
+				</div>
+				<div class="col-xs-6" id="cigsUsed">0 cigs</div>
 			</div>
+			<br>
 	  	</div>
-	</div>
 <p>The more you use the app the better our predictions will be and the more informed you will be</p>
 <p><h9>Enjoy Responisbly!</h9></p>
 </body>
