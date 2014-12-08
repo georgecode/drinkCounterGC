@@ -5,17 +5,17 @@ $(document).ready(function(){
 
 	$('#cigs').click(function(){
 		numCigs = numCigs+1
-		$('#cigsUsed').html("<p> You smoked </p>" + numCigs + "<p>cids</p>")
+		$('#cigsUsed').html( numCigs + " cig(s)")
 	});
 
 	$('#drinks').click(function(){
 		numDrinks = numDrinks+1
-		$('#drinksUsed').html("<p> You drank </p>" + numDrinks + "<p>drinks</p>")
+		$('#drinksUsed').html( numDrinks + " drink(s)")
 	});
 
 	$('#waters').click(function(){
 		numWaters = numWaters+1
-		$('#watersUsed').html("<p> You drank </p>" + numWaters + "<p>waters</p>")
+		$('#watersUsed').html( numWaters + " water(s)")
 	});
 	
 });
